@@ -104,22 +104,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
       - - {x: 32, y: -25}
-        - {x: -24, y: -24}
-        - {x: -24, y: 32}
-        - {x: -32, y: 32}
-        - {x: -32, y: -24}
+        - {x: -16, y: -24}
+        - {x: -32, y: -25}
         - {x: -32, y: -32}
-        - {x: -24.718204, y: -32}
         - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
@@ -134,19 +131,16 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
       - - {x: 32, y: -25}
-        - {x: 32, y: 32}
-        - {x: 23, y: 32}
-        - {x: 24, y: -25}
         - {x: -32, y: -25}
         - {x: -32, y: -32}
         - {x: 32, y: -32}
@@ -163,11 +157,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,49 +179,23 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paredes 1_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -24, y: 32}
-        - {x: -32, y: 32}
-        - {x: -32, y: -32}
-        - {x: -24, y: -32}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 104eb42d0aef80e42b3370844e091965
-      internalID: -1700722341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: paredes 1_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 0
+        y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: 32, y: 32}
-        - {x: 24, y: 32}
-        - {x: 24, y: -32}
-        - {x: 32, y: -32}
+      - - {x: -32, y: 32}
+        - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: -32, y: -32}
       tessellationDetail: 0
       bones: []
       spriteID: 5a7d262caf566434695d3a89876aa328
@@ -240,25 +208,19 @@ TextureImporter:
       name: paredes 1_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 64
+        y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: 32, y: -25}
-        - {x: 32, y: 32}
-        - {x: 24, y: 32}
-        - {x: 24, y: -25}
-        - {x: -24, y: -25}
-        - {x: -24, y: 32}
-        - {x: -32, y: 32}
-        - {x: -32, y: -25}
-        - {x: -32, y: -32}
+      - - {x: 32, y: 32}
+        - {x: 16, y: 32}
+        - {x: 17, y: -32}
         - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
@@ -272,12 +234,12 @@ TextureImporter:
       name: paredes 1_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 128
+        y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,15 +257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paredes 1_7
+      name: paredes 1_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 0
+        y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -314,38 +276,258 @@ TextureImporter:
         - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: 74c14e8516bc54643afe612858840286
+      spriteID: 14ee5878a55118b4485ffb0cb03e7493
+      internalID: 889668712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -25}
+        - {x: -32, y: -25}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f6a286a638a4b4aa10eb0ae1398451
+      internalID: -924956406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 32}
+        - {x: 16, y: 32}
+        - {x: 16, y: -32}
+        - {x: 32, y: -32}
+      - - {x: -32, y: -32}
+        - {x: -16, y: -32}
+        - {x: -16, y: 32}
+        - {x: -32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18526386f7e2d342a480e7de882ebbc
+      internalID: -231084631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 32}
+        - {x: 17, y: 32}
+        - {x: 17, y: -25}
+        - {x: -32, y: -25}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef60b1268c6f0b7409859890e1455f69
+      internalID: -1700722341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -25}
+        - {x: -17, y: -25}
+        - {x: -17, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8546bbfcf885a43bf506600e7b8e4c
       internalID: -1321494184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paredes 1_8
+      name: paredes 1_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -25}
+        - {x: -32, y: -25}
+        - {x: -32, y: -32}
+        - {x: -16, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267e2981bf9e784469a73808ff71d71b
+      internalID: 1954139168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -25}
+        - {x: -17, y: -25}
+        - {x: -17, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4a9288c0957a54aacb29e821e3e795
+      internalID: -367517346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 32}
+        - {x: 17, y: 32}
+        - {x: 17, y: -25}
+        - {x: -32, y: -25}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d34e1cd3dd280d49bfe205c8cc06716
+      internalID: 964921637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_14
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: 32, y: 32}
-        - {x: 24, y: 32}
-        - {x: 24, y: -32}
+      - - {x: 32, y: -25}
+        - {x: 16, y: -25}
+        - {x: 16, y: -32}
         - {x: 32, y: -32}
       - - {x: -32, y: -32}
-        - {x: -24, y: -32}
-        - {x: -24, y: 32}
-        - {x: -32, y: 32}
+        - {x: -16, y: -32}
+        - {x: -16, y: -25}
+        - {x: -32, y: -25}
       tessellationDetail: 0
       bones: []
-      spriteID: 14ee5878a55118b4485ffb0cb03e7493
-      internalID: 889668712
+      spriteID: fe223cafa4ee7eb48822d2e5859ec6ad
+      internalID: -714331423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paredes 1_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -25}
+        - {x: 16, y: -25}
+        - {x: 16, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36f87224dfbb5a4cac9f00a0f6dec65
+      internalID: -514327183
       vertices: []
       indices: 
       edges: []
@@ -368,6 +550,12 @@ TextureImporter:
     nameFileIdTable:
       paredes 1_0: 5785005786836880167
       paredes 1_1: -1098575820
+      paredes 1_10: -231084631
+      paredes 1_11: 1954139168
+      paredes 1_12: -367517346
+      paredes 1_13: 964921637
+      paredes 1_14: -714331423
+      paredes 1_15: -514327183
       paredes 1_2: -744502671
       paredes 1_3: -1700722341
       paredes 1_4: 646967373
@@ -375,6 +563,7 @@ TextureImporter:
       paredes 1_6: 613927735
       paredes 1_7: -1321494184
       paredes 1_8: 889668712
+      paredes 1_9: -924956406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FinalDepthSort : MonoBehaviour 
+public class YSort : MonoBehaviour
 {
     SpriteRenderer sr;
 
@@ -11,9 +11,6 @@ public class FinalDepthSort : MonoBehaviour
 
     void LateUpdate()
     {
-        // Ajusta conforme o tamanho do seu mapa e posição dos Tilemaps
-        // Quanto mais embaixo na tela (Y menor), maior o order (mais na frente)
         sr.sortingOrder = Mathf.RoundToInt(-transform.position.y * 10);
     }
-
 }
