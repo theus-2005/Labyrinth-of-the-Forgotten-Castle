@@ -15,3 +15,11 @@ UserSettings/
 *.svd
 *.pdb
 *.mdb
+
+# Visual Studio
+.vs/
+.vsconfig
+
+# Visual Studio solution
+*.slnx
+Labyrinth-of-the-Forgotten-Castle.slnx
