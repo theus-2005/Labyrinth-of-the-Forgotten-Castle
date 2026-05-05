@@ -41,6 +41,9 @@ TagManager:
   - name: "Ch\xE3o"
     uniqueID: 763805135
     locked: 0
+  - name: "Bot\xF5es"
+    uniqueID: 631148735
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

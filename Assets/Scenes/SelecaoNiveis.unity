@@ -395,7 +395,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 505853699}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2051412186}
+        m_TargetAssemblyTypeName: SeletorDificuldade, Assembly-CSharp
+        m_MethodName: EscolherNormal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &505853699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,7 +715,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1189235231}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2051412186}
+        m_TargetAssemblyTypeName: SeletorDificuldade, Assembly-CSharp
+        m_MethodName: EscolherDificil
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1189235231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,7 +1124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1856035845}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2051412186}
+        m_TargetAssemblyTypeName: SeletorDificuldade, Assembly-CSharp
+        m_MethodName: EscolherMedio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1856035845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,6 +1175,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856035841}
   m_CullTransparentMesh: 1
+--- !u!1 &2051412185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2051412187}
+  - component: {fileID: 2051412186}
+  m_Layer: 0
+  m_Name: SeletorDificuldade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2051412186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051412185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47b96eb59f0fa34998cbff301d5ef74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SeletorDificuldade
+--- !u!4 &2051412187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051412185}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3509, y: 0.95808, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1146,3 +1226,4 @@ SceneRoots:
   - {fileID: 1127279140}
   - {fileID: 1565284506}
   - {fileID: 174571574}
+  - {fileID: 2051412187}

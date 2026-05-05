@@ -34,7 +34,6 @@ public class DistribuidorDeLogica : MonoBehaviour
         todosOsBotoes[i].portasControladas.Clear();
         todosOsBotoes[i].portasControladas.Add(portasEmbaralhadas[i]);
         todosOsBotoes[i].portasControladas.Add(portasEmbaralhadas[(i + 1) % portasEmbaralhadas.Count]);
-        todosOsBotoes[i].ConfiguracaoInicial();
     }
 }
 }

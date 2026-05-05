@@ -1417,8 +1417,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "DIFICULDADES:\nSua prova ser\xE1 dividida em 3 desafios:\n1) No n\xEDvel
     f\xE1cil, voc\xEA enfrentar\xE1 apenas o enigma do labirinto.\n2) No n\xEDvel
-    m\xE9dio, uma estranha maldi\xE7\xE3o poder\xE1 confundir seus movimentos...\n3)
-    No n\xEDvel dif\xEDcil, a escurid\xE3o poder\xE1 se tornar sua maior inimiga.\nBoa
+    m\xE9dio, a escurid\xE3o poder\xE1 se tornar sua maior inimiga.\n3) No n\xEDvel
+    dif\xEDcil, uma estranha maldi\xE7\xE3o poder\xE1 confundir seus movimentos.\nBoa
     sorte, cavaleiro!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df717a59cc7baa44480e73fc428e950a, type: 2}
