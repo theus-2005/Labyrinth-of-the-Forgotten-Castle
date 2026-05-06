@@ -9,6 +9,7 @@ public class HistoriaController : MonoBehaviour
     public TextMeshProUGUI TextoHistoria;
     public GameObject BtnPular;
     public GameObject BtnContinuar;
+    public GameObject BtnVoltar;
     public GameObject SombraBruxa;
     public GameObject SombraCavaleiro;
 
@@ -28,7 +29,6 @@ public class HistoriaController : MonoBehaviour
 
     private int indiceAtual = 0;
     private bool estaDigitando = false;
-    private bool historiaTerminou = false;
     private bool historiaComecou = false;
 
     private Coroutine digitacaoAtual;
@@ -37,8 +37,11 @@ public class HistoriaController : MonoBehaviour
     {
         if (BtnPular != null) BtnPular.SetActive(false);
         if (BtnContinuar != null) BtnContinuar.SetActive(false);
+        if (BtnVoltar != null) BtnVoltar.SetActive(false);
+
         if (SombraBruxa != null) SombraBruxa.SetActive(false);
         if (SombraCavaleiro != null) SombraCavaleiro.SetActive(false);
+
         if (TextoHistoria != null) TextoHistoria.text = "";
 
         StartCoroutine(IniciarHistoria());
@@ -50,16 +53,7 @@ public class HistoriaController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            if (historiaTerminou) return;
-
-            if (estaDigitando)
-            {
-                CompletarFraseAtual();
-            }
-            else
-            {
-                ProximaFrase();
-            }
+            AvancarHistoria();
         }
     }
 
@@ -74,9 +68,11 @@ public class HistoriaController : MonoBehaviour
                 yield return null;
         }
 
-        if (BtnPular != null) BtnPular.SetActive(true);
-
         historiaComecou = true;
+
+        if (BtnPular != null) BtnPular.SetActive(true);
+        if (BtnContinuar != null) BtnContinuar.SetActive(true);
+        if (BtnVoltar != null) BtnVoltar.SetActive(false);
 
         if (frases != null && frases.Length > 0)
             IniciarDigitacao();
@@ -84,9 +80,7 @@ public class HistoriaController : MonoBehaviour
 
     void IniciarDigitacao()
     {
-        if (digitacaoAtual != null)
-            StopCoroutine(digitacaoAtual);
-
+        PararDigitacaoAtual();
         digitacaoAtual = StartCoroutine(DigitarFrase());
     }
 
@@ -107,66 +101,96 @@ public class HistoriaController : MonoBehaviour
         digitacaoAtual = null;
 
         VerificarEventosDaFrase();
-        VerificarFimDaHistoria();
+        AtualizarBotoes();
+    }
+
+    void PararDigitacaoAtual()
+    {
+        if (digitacaoAtual != null)
+        {
+            StopCoroutine(digitacaoAtual);
+            digitacaoAtual = null;
+        }
+
+        estaDigitando = false;
     }
 
     void CompletarFraseAtual()
     {
-        if (digitacaoAtual != null)
-        {
-            StopCoroutine(digitacaoAtual);
-            digitacaoAtual = null;
-        }
+        PararDigitacaoAtual();
 
         TextoHistoria.text = frases[indiceAtual];
-        estaDigitando = false;
 
         VerificarEventosDaFrase();
-        VerificarFimDaHistoria();
+        AtualizarBotoes();
     }
 
-    void ProximaFrase()
+    public void AvancarHistoria()
     {
+        if (!historiaComecou || frases == null || frases.Length == 0)
+            return;
+
+        if (estaDigitando)
+        {
+            CompletarFraseAtual();
+            return;
+        }
+
+        if (indiceAtual == frases.Length - 1)
+        {
+            Continuar();
+            return;
+        }
+
         indiceAtual++;
 
-        if (indiceAtual < frases.Length)
-        {
-            IniciarDigitacao();
-        }
-        else
-        {
-            FinalizarHistoria();
-        }
+        AtualizarBotoes();
+        IniciarDigitacao();
+    }
+
+    public void VoltarHistoria()
+    {
+        if (!historiaComecou || frases == null || frases.Length == 0)
+            return;
+
+        if (indiceAtual == 0)
+            return;
+
+        PararDigitacaoAtual();
+
+        indiceAtual--;
+
+        TextoHistoria.text = frases[indiceAtual];
+
+        AtualizarSombrasAoVoltar();
+        AtualizarBotoes();
+    }
+
+    void AtualizarBotoes()
+    {
+        if (BtnVoltar != null)
+            BtnVoltar.SetActive(indiceAtual > 0);
+
+        if (BtnContinuar != null)
+            BtnContinuar.SetActive(true);
     }
 
     void VerificarEventosDaFrase()
     {
-        if (indiceAtual == 3 && SombraBruxa != null)
+        if (indiceAtual >= 3 && SombraBruxa != null)
             SombraBruxa.SetActive(true);
 
-        if (indiceAtual == 4 && SombraCavaleiro != null)
+        if (indiceAtual >= 4 && SombraCavaleiro != null)
             SombraCavaleiro.SetActive(true);
     }
 
-    void VerificarFimDaHistoria()
+    void AtualizarSombrasAoVoltar()
     {
-        if (indiceAtual == frases.Length - 1)
-            FinalizarHistoria();
-    }
+        if (SombraBruxa != null)
+            SombraBruxa.SetActive(indiceAtual >= 3);
 
-    void FinalizarHistoria()
-    {
-        historiaTerminou = true;
-        estaDigitando = false;
-
-        if (digitacaoAtual != null)
-        {
-            StopCoroutine(digitacaoAtual);
-            digitacaoAtual = null;
-        }
-
-        if (BtnContinuar != null) BtnContinuar.SetActive(true);
-        if (BtnPular != null) BtnPular.SetActive(false);
+        if (SombraCavaleiro != null)
+            SombraCavaleiro.SetActive(indiceAtual >= 4);
     }
 
     public void PularHistoria()
@@ -177,26 +201,16 @@ public class HistoriaController : MonoBehaviour
             return;
         }
 
-        if (digitacaoAtual != null)
-        {
-            StopCoroutine(digitacaoAtual);
-            digitacaoAtual = null;
-        }
-
-        StopAllCoroutines();
+        PararDigitacaoAtual();
 
         indiceAtual = frases.Length - 1;
         TextoHistoria.text = frases[indiceAtual];
 
-        estaDigitando = false;
-        historiaTerminou = true;
-        historiaComecou = true;
-
-        if (BtnContinuar != null) BtnContinuar.SetActive(true);
         if (BtnPular != null) BtnPular.SetActive(false);
+        if (BtnContinuar != null) BtnContinuar.SetActive(true);
 
-        if (SombraBruxa != null) SombraBruxa.SetActive(true);
-        if (SombraCavaleiro != null) SombraCavaleiro.SetActive(true);
+        AtualizarSombrasAoVoltar();
+        AtualizarBotoes();
     }
 
     public void Continuar()
