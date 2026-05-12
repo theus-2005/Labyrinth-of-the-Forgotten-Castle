@@ -1,6 +1,6 @@
 # 🏰 Labyrinth of the Forgotten Castle
 
-> Trabalho acadêmico desenvolvido para o **Unigame** — Unity maze game com mecânicas de lógica, iluminação e controles embaralhados.
+> Trabalho acadêmico desenvolvido para o **Unigames** — Unity maze game com mecânicas de lógica, iluminação e controles embaralhados.
 
 ---
 
@@ -43,4 +43,4 @@ A cada nova partida, as conexões entre botões e portas são **geradas aleatori
 
 ## 👥 Equipe
 
-Projeto desenvolvido por 3 integrantes como trabalho acadêmico para o **Unigame**.
+Projeto desenvolvido por 3 integrantes como trabalho acadêmico para o **Unigames**.
